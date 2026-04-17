@@ -1,0 +1,10 @@
+services:
+  todaktodak:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: todaktodak:latest
+    container_name: todaktodak
+    restart: unless-stopped
+    ports:
+      - "80:80"
